@@ -1,0 +1,16 @@
+{
+  "name": "pb-hooks-starter",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup --target es5 './src/hooks/*.ts' -d ./dist",
+    "dev": "chokidar './src/hooks/**' -c 'yarn build:hooks' --initial"
+  },
+  "dependencies": {
+    "@swc/core": "^1.3.86",
+    "chokidar-cli": "^3.0.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
