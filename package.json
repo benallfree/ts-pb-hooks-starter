@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsup --target es5 './src/hooks/*.ts' -d ./dist",
+    "build": "tsup './src/entries/*.ts' -d ./dist",
     "dev": "chokidar './src/hooks/**' -c 'yarn build:hooks' --initial"
   },
   "dependencies": {

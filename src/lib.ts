@@ -1,4 +1,4 @@
-export function _unsafe_assert<T>(
+export function assert<T>(
   v: T | undefined | void | null,
   msg?: string
 ): asserts v is T {
@@ -6,4 +6,3 @@ export function _unsafe_assert<T>(
     throw new Error(msg || `Assertion failure`)
   }
 }
-export type Assert = typeof _unsafe_assert
