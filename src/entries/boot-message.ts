@@ -6,5 +6,5 @@ export default () => {
   /**
    * These will be sent to stdout by pocketbase
    */
-  console.log(`Hello, world!`)
+  console.log(`PocketBase started`)
 }
